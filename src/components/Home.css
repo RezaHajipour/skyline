@@ -1,3 +1,12 @@
+.home-container {
+    height: 88vh;
+    background-color: rgb(27, 28, 30);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .background-img {
-    width: 100vw;
+    width: 70vw;
+    background-color: rgb(27, 28, 30);
 }

@@ -1,14 +1,16 @@
 import "./App.css";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./Home";
-import Nav from "./Nav";
-import Uber from "./Uber";
-import Kontakt from "./Kontakt";
+import Home from "./components/Home";
+import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
+
+import Uber from "./components/Uber";
+import Kontakt from "./components/Kontakt";
 
 function App() {
     return (
         <BrowserRouter>
-            <Nav />
+            <Navbar />
             <div className="App">
                 <Routes>
                     <Route path="/" element={<Home />} />
@@ -16,6 +18,7 @@ function App() {
                     <Route path="/kontakt" element={<Kontakt />} />
                 </Routes>
             </div>
+            <Footer />
         </BrowserRouter>
     );
 }
